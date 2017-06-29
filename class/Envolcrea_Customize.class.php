@@ -21,6 +21,7 @@ class Envolcrea_Customize
         $section = self::addSection($wp_customize, 'section_header', 'header', $panel);
         self::addparamMedia($wp_customize, $section['name'] . 'header', $section['full'], 'Image arrière plan', 'image');
         self::addparamMedia($wp_customize, $section['name'] . 'header1', $section['full'], 'Image titre', 'image');
+        self::addParam($wp_customize, $section['name'] . 'texte1', $section['full'], 'Titre 1 section header', 'text');
 
         $section = self::addSection($wp_customize, 'section_web', 'web', $panel);
         self::addParam($wp_customize, $section['name'] . 'paraph1', $section['full'], 'Paragraphe 1 section web', 'textarea');
@@ -37,7 +38,6 @@ class Envolcrea_Customize
         self::addParam($wp_customize, $section['name'] . 'paraph1', $section['full'], 'Paragraphe 1 section présentation', 'textarea');
 
         $section = self::addSection($wp_customize, 'section_services', 'services', $panel);
-
         self::addParam($wp_customize, $section['name'] . 'texte1', $section['full'], 'Titre 1 section service', 'text');
         self::addParam($wp_customize, $section['name'] . 'paraph1', $section['full'], 'Paragraphe 1 section service', 'textarea');
 
@@ -48,7 +48,6 @@ class Envolcrea_Customize
         self::addParam($wp_customize, $section['name'] . 'paraph3', $section['full'], 'Paragraphe 3 section service', 'textarea');
 
         $section = self::addSection($wp_customize, 'section_contact', 'contact', $panel);
-
         self::addParam($wp_customize, $section['name'] . 'nom_prenom', $section['full'], 'Nom et prénom', 'text');
         self::addParam($wp_customize, $section['name'] . 'telephone', $section['full'], 'Télphone', 'text');
         self::addParam($wp_customize, $section['name'] . 'email', $section['full'], 'Email', 'email');

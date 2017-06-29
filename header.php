@@ -8,11 +8,11 @@
     <link rel="profile" href="http://gmpg.org/xfn/11">
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
-    <meta name="description" content="site Envol-Créa de Pauline Vidinic. Développement web.">
-    <meta name="keywords" content="développement, compétences, web, responsive, services">
+    <meta name="description" content="site Envol-Créa de Pauline Vidinic à Saint Pair Sur Mer dans la Manche. Développement web.">
+    <meta name="keywords" content="développement, compétences, web, responsive, services, contact, Saint Pair Sur Mer, Manche.">
     <link rel="shortcut icon" src="<?php echo get_template_directory_uri()?>/img/logo_V.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
+    <link href="https://fonts.googleapis.com/css?family=Oregano" rel="stylesheet">
     <!--Import Google Icon Font-->
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
@@ -36,9 +36,9 @@ $menuLinks = wp_get_nav_menu_items($idMenuTheme);
 ?>
 <body>
 <div class="navbar-fixed">
-    <nav>
-        <div class="nav-wrapper  blue darken-2">
-            <a href="#!" class="brand-logo"><img src="<?= get_template_directory_uri()?>/img/logo_nav.png">EnvolCrea</a>
+    <nav class="blue darken-2" role="navigation">
+        <div class="nav-wrapper container">
+            <a href="#" class="brand-logo"><img src="<?= get_template_directory_uri()?>/img/logo_nav.png">EnvolCrea</a>
             <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
                 <?php
@@ -55,16 +55,16 @@ $menuLinks = wp_get_nav_menu_items($idMenuTheme);
                 endforeach;
                 ?>
             </ul>
-            <ul class="side-nav" id="mobile-demo">
+        </div>
+    </nav>
+</div>
+            <ul class="side-nav blue darken-2" id="mobile-demo">
                 <?php
                 foreach ($menuLinks as $link):
                 ?>
-                <li><a href="<?= $link->url ?>"><?= $link->title ?></a></li>
+                <li><a href="<?= $link->url ?>" class="js-scrollTo"><?= $link->title ?></a></li>
                 <?php
                 endforeach;
                 ?>
             </ul>
-        </div>
-    </nav>
-</div>
 <!-- fin navigation -->

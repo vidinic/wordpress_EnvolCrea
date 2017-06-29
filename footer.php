@@ -8,7 +8,7 @@ $menuLinks = wp_get_nav_menu_items($idMenuTheme);
 <footer class="page-footer">
     <div class="footer-copyright">
         <div class="container">
-            © 2017 Copyright <a class="grey-text text-darken-4" href="#">Envol-Crea</a>
+            © 2017 Copyright <a class="grey-text text-darken-4" href="#">Envol-Crea</a> Siret 830 430 534 00016
             <?php
             foreach ($menuLinks as $link):
                 ?>
@@ -33,7 +33,7 @@ $page = get_post($idPage);
         <?= $page->post_content ?>
     </div>
     <div class="modal-footer">
-        <a href="#" class="modal-action modal-close waves-effect waves-green btn-flat ">Fermer</a>
+        <a href="" class="modal-action modal-close waves-effect waves-green btn-flat ">Fermer</a>
     </div>
 </div>
 <?php wp_footer(); ?>

@@ -1,4 +1,5 @@
 jQuery(document).ready(function () {
+    jQuery(".button-collapse").sideNav();
     jQuery('.parallax').parallax();
     jQuery('.modal').modal();
 });
